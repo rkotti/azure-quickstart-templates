@@ -219,7 +219,18 @@
           {
             "name": "LoadBalancerBackend"
           }
-        ]
+        ],
+        "probes": [
+                    {
+                        "name": "healthprobe1",
+                        "properties": {
+                            "protocol": "Tcp",
+                            "port": 80,
+                            "intervalInSeconds": 5,
+                            "numberOfProbes": 2
+                        }
+                    }
+                ]
       }
     },
     {
